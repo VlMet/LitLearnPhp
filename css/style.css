@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #0064ad #fff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    min-height: calc(100vh - 225px);
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+    margin: 15px 0 25px 0;
+    color: #0064ad;
+}
+
+
+/* ------------------------------------------ HEADER  ------------------------------------------ */
+
+.header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0064ad;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-nav a {
+    padding-bottom: 2px;
+}
+
+.header-nav a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 60px;
+    margin-right: 30px;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+.header-nav {
+    display: flex;
+    list-style: none;
+}
+
+.header-nav a {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.pd {
+    padding: 20px 30px;
+    margin-bottom: 40px;
+}
+
+.reload_btn button{
+    padding: 1em 2em;
+    background-color: #dedede;
+    outline: #808080;
+    border: none;
+    transition: 0.2s;
+}
+.reload_btn button:hover {
+    background-color: #cacaca;
+}
+.reload_btn button:active {
+    position: relative;
+    top: 1px;
+}
+
+/* ------------------------------------------ FORM - select group ------------------------------------------ */
+
+.form_selectGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.form_selectGroup * {
+    margin: 10px auto;
+    text-align: center;
+    width: 90%;
+    max-width: 260px;
+    height: 4em;
+    border: 1px solid #808080;
+    transition: 0.3s;
+}
+
+.form_selectGroup button {
+    background-color: #0064ad;
+    color: white;
+}
+.form_selectGroup button:hover {
+    background-color: #005a9b;
+}
+.form_selectGroup button:active {
+    position: relative;
+    top: 1px;
+}
+
+.main {
+    width: 100%;
+}
+
+/* ------------------------------------------ FORM - message  ------------------------------------------ */
+#mess {
+    width: 100%;
+    height: 3rem;
+    resize: none;
+}
+#message_form {
+    width: 80%;
+}
+#message_form table select {
+    height: 3rem;
+}
+#message_form table #td_mess {
+    width: 100%;
+}
+
+/* ------------------------------------------ TABLE - lessons ------------------------------------------ */
+
+.table_lessons {
+    background-color: #808080;
+    padding: 0;
+}
+.table_lessons tr {
+    margin: 0;
+    background-color: #fff;
+}
+.table_lessons tr td{
+    outline: 0.5px solid #808080;
+    margin: 0;
+    transition: 0.3s;
+    padding: 0.5em;
+    text-align: center;
+    min-width: 100px;
+}
+.table_lessons tr:not(:first-child):hover td {
+    background-color: #dedede;
+}
+
+
+.table_edit tr td:last-child {
+    min-width: 0;
+    padding: 0;
+}
+
+
+.table_edit  {
+    margin-bottom: 40px;
+}
+
+.table_edit tr td:last-child input{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    transition: 0.4s;
+}
+.table_edit tr:not(:first-child) td:last-child:hover  {
+    background-color: #ffb5b5;
+}
+
+
+
+
+/* ------------------------------------------ Publicate  ------------------------------------------ */
+/*.publicate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}*/
+.publicate form input, .publicate form select {
+    text-align: center;
+    border: 1px solid #808080;
+    border-radius: 0;
+    padding: 0.5em;
+}
+.block {
+    margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* ------------------------------------------ FORM -edit  ------------------------------------------ */
+.edit_groups {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.edit_groups div {
+    width: 25%;
+}
+/* ------------------------------------------ FOOTER  ------------------------------------------ */
+
+.footer {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    margin-top: 40px;
+    background-color: #0064ad;
+}
+
+.footer-nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.footer-nav li {
+    margin: 0 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 2px;
+}
+
+.footer-nav a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.footer p {
+    color: #fff;
+}
+
+/* ------------------------------------------ END FOOTER ------------------------------------------ */
